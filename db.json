@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "d35c",
+      "firstName": "Rohit ",
+      "lastName": "Sharma",
+      "email": "rohit@gmail.com",
+      "phone": "7268790709",
+      "address": "Mumbai, MH"
+    },
+    {
+      "id": "357f",
+      "firstName": "Virat",
+      "lastName": "Kohli",
+      "email": "virat0510@gmail.com",
+      "phone": "8645860799",
+      "address": "Mumbai, MH"
+    },
+    {
+      "id": "9ae9",
+      "firstName": "Tony ",
+      "lastName": "Stark",
+      "email": "tony@gmail.com",
+      "phone": "9887097999",
+      "address": "USA"
+    },
+    {
+      "id": "1f19",
+      "firstName": "Ashutosh",
+      "lastName": "Rode",
+      "email": "arode1999@gmail.com",
+      "phone": "7276044860",
+      "address": "Bajirao Nagar"
+    },
+    {
+      "id": "a735",
+      "firstName": "Allu",
+      "lastName": "Arjun",
+      "email": "pushpa@gmail.com",
+      "phone": "7815427942",
+      "address": "Hyderabad"
+    },
+    {
+      "id": "705d",
+      "firstName": "Shahid",
+      "lastName": "Kapoor",
+      "email": "shahid20@gmail.com",
+      "phone": "7545445417",
+      "address": "Mumbai, MH"
+    },
+    {
+      "id": "6824",
+      "firstName": "Hrushikesh",
+      "lastName": "Rode",
+      "email": "hrushikesh@gmail.com",
+      "phone": "9270021252",
+      "address": "Yeola,MH"
+    }
+  ]
+}

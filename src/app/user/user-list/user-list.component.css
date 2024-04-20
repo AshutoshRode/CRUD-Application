@@ -1,0 +1,24 @@
+.add-btn{
+    display: flex;
+    justify-content: end;
+}
+.shadow{
+    box-shadow: 1px;
+}
+.show-toast {
+    display: block !important; /* Override display: none */
+  }
+.rounded{
+    border-radius: 100px;
+}
+  
+.list-title{
+    color: rgb(134, 14, 247);
+}
+table thead th{
+    color: rgb(135, 73, 194);
+}
+#edit{
+    background-color: rgb(178, 110, 242);
+    color:white;
+}

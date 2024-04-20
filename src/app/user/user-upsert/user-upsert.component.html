@@ -1,0 +1,74 @@
+<div class="add-user-box" style="display: flex; align-items: center; justify-content: center;">
+  <div class="toast align-items-center text-bg-primary border-0 position-absolute top-0 end-0.1"
+    [ngClass]="{'show-toast': showToast}" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        {{msg}}
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"
+        (click)="hideToast()"></button>
+    </div>
+  </div>
+  <div class="user-box">
+
+    <form class="border rounded shadow p-3 form" [formGroup]="userForm">
+
+      <div class="user-title">
+        <h2>Add User Details</h2>
+      </div>
+      <div class="mb-2">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstname" formControlName="firstName" aria-describedby="emailHelp">
+        <div *ngIf="userForm.get('firstName')?.touched && userForm.get('firstName')?.invalid" class="red-font">
+          First name is required.
+        </div>
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" formControlName="lastName" id="lastname">
+        <div *ngIf="userForm.get('lastName')?.touched && userForm.get('lastName')?.invalid" class="red-font">
+          Last name is required.
+        </div>
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Address</label>
+        <textarea class="form-control" id="address" formControlName="address" rows="3"></textarea>
+        <div *ngIf="userForm.get('address')?.touched && userForm.get('address')?.invalid" class="red-font">
+          Address is required.
+        </div>
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email" id="email">
+        <div *ngIf="userForm.get('email')?.touched && userForm.get('email')?.errors">
+          <div *ngIf="getFormFieldErrors('email')?.['required']" class="red-font">
+            Please add your email address
+          </div>
+          <div *ngIf="getFormFieldErrors('email')?.['pattern']" class="red-font">
+            Please add valid email address
+          </div>
+        </div>
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Phone Number</label>
+        <input type="text" class="form-control" formControlName="phone" id="phone">
+        <div *ngIf="userForm.get('phone')?.touched && userForm.get('phone')?.invalid" class="red-font">
+          Phone must be 10 digits.
+        </div>
+        <!-- <div *ngIf="getFormFieldErrors('phone')?.['minlength']" class="red-font">
+          Phone number should be of 10 digits
+        </div>
+        <div *ngIf="getFormFieldErrors('phone')?.['maxlength']" class="red-font">
+          Maximum length should be of 10 digits
+        </div> -->
+      </div>
+      <div class="user-button">
+        <button type="submit" class="btn btn-success" (click)="onSubmit()" [disabled]="userForm.invalid">Submit</button>
+        <button type="submit" class="btn btn-dark" (click)="goToList()">Go Back</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

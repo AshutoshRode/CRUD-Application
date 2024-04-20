@@ -1,0 +1,55 @@
+.form {
+    /* height: 100px; */
+    width: 500px;
+
+
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.shadow {
+    box-shadow: 10px;
+}
+
+.show-toast {
+    display: block !important;
+}
+
+.red-font {
+    color: red;
+}
+
+.add-user-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-button button {
+    /* display: flex;  */
+    /* justify-content:space-between; */
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.user-box {
+    width: 500px;
+
+}
+
+.user-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    color: blueviolet;
+}
+
+form input,
+textarea {
+    background-color: rgb(219, 212, 226);
+}
