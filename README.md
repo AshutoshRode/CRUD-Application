@@ -1,4 +1,4 @@
-# User Management System
+# CURD Application 
 
 This project is an Angular-based User Management System designed to demonstrate basic CRUD (Create, Read, Update, Delete) operations in a simple user interface. The application is divided into various modules, specifically focusing on user operations. It includes a reactive form for user data entry, validation, and a grid display of users with options to edit or delete records.
 
