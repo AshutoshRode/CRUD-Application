@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   // url: string = 'http://localhost:3000/users/';
-  url: string = 'https://ca9e6911350d6338ac4d.free.beeceptor.com/api/users/';
+  url: string = 'https://json-server-api-woad.vercel.app/users';
   userSubject:any;
 
   constructor(private http: HttpClient) { }
